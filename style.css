@@ -1,0 +1,17 @@
+:root {
+    --brown-bg: #6E5C62;
+    --guess-brown-key: #312A2C;
+    --guess-brown-border: #4C4347;
+    --guess-brown-available: #615458;
+    --kb-available-key: #4C4347;
+    --kb-used-key: #594B4F;
+    --kb-used-key-text: #6E5C5C;
+    --yellow: #D3AD69;
+    --green: #3AA394;
+    --white: #FAFAFF;
+    --main-font: "Fira Code", monospace;
+}
+
+body {
+    background-color: var(--brown-bg);
+}
