@@ -6,6 +6,7 @@
     --kb-available-key: #4C4347;
     --kb-used-key: #594B4F;
     --kb-used-key-text: #6E5C5C;
+    --icon: #B3A9AF;
     --yellow: #D3AD69;
     --green: #3AA394;
     --white: #FAFAFF;
@@ -23,6 +24,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 400px;
+    margin: 10px 0;
 }
 
 header h1 {
@@ -33,7 +35,7 @@ header h1 {
  header img {
     width: 25px;
     height: auto;
-    border: 3px solid #B3A9AF;
+    border: 2px solid var(--icon);
     border-radius: 5px;
     cursor: pointer;
 
@@ -43,16 +45,67 @@ header button {
     width: 31px;
     height: 31px;
     background-color: var(--brown-bg);
-    border: 3px solid #B3A9AF;
-    color: #B3A9AF;
+    border: 2px solid var(--icon);
+    color: var(--icon);
     font-weight: 500;
     border-radius: 5px;
     cursor: pointer;
     font-family: var(--main-font);
 }
 
+.header__left {
+    display: flex;
+    gap: 6px;
+}
+
+.board {
+    margin: 100px 0 50px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(6, 50px);
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+}
+
+.board p {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.board div {
+    width: 50px;
+    height: 50px; 
+    border-radius: 5px;
+    margin: 4px 0;
+}
+
+.board__element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#s {
+    box-sizing: border-box;
+    background-color: var(--brown-bg);
+    border: 4px solid var(--guess-brown-border);
+}
+
+#empty {
+    background-color: var(--guess-brown-available);
+}
+
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .teclado button {
-    width: 60px;
+    width: 70px;
     height: 50px;
     background-color: var(--kb-available-key);
     color: var(--white);
@@ -60,6 +113,46 @@ header button {
     border-radius: 5px;
     border-style: none;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
 
+#used {
+    background-color: var(--kb-used-key);
+    color: var(--kb-used-key-text);
+}
+
+.kb_row_layout {
+    margin-left: 80px;
+}
+
+.kb_row_layout_2{
+    margin-left: 100px;
+}
+
+#yellow {
+    background-color: var(--yellow);
+}
+
+#green {
+    background-color: var(--green);
+}
+
+#brown {
+    background-color: var(--guess-brown-key);
+}
+
+.backspace {
+    margin-left: 20px;
+}
+
+.backspace img {
+    width: 22px;
+    height: auto;
+}
+
+#enter {
+    width: 200px;
+    margin-left: 25px;
 }
