@@ -9,9 +9,57 @@
     --yellow: #D3AD69;
     --green: #3AA394;
     --white: #FAFAFF;
-    --main-font: "Fira Code", monospace;
+    --main-font: "Mitr", sans-serif;
 }
 
 body {
     background-color: var(--brown-bg);
+    font-family: var(--main-font);
+    color: var(--white);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+ header img {
+    width: 25px;
+    height: auto;
+    border: 3px solid #B3A9AF;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+header button {
+    width: 31px;
+    height: 31px;
+    background-color: var(--brown-bg);
+    border: 3px solid #B3A9AF;
+    color: #B3A9AF;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--main-font);
+}
+
+.teclado button {
+    width: 60px;
+    height: 50px;
+    background-color: var(--kb-available-key);
+    color: var(--white);
+    font-family: var(--main-font);
+    border-radius: 5px;
+    border-style: none;
+    font-weight: 500;
+    font-size: 20px;
+
 }
